@@ -1,0 +1,107 @@
+body, div, span, applet, object, iframe,
+h1, h2, h4, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	font-family: 'OpenSans', Arial, sans-serif !important;
+	font-weight: 500 !important;
+	color: rgb(0,0,0);
+}
+.preload * {
+ -webkit-transition: none !important;
+ -moz-transition: none !important;
+ -ms-transition: none !important;
+ -o-transition: none !important;
+}
+body {
+	background-color: rgb (254,254,254) !important;
+}
+.frame{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+.child {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+h1, .h1 {
+	font-size: 3rem;
+	cursor: default;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+p, li, li {
+	font-size: 2rem;
+	line-height: 3.8rem;
+	color: rgb(0,0,0);
+}
+a, li a {
+	position: relative;
+	transition: all 2s ease-in-out;
+}
+li a:hover, li a:active, li a:focus {
+	color: rgb(9,133,36)!important;
+}
+li a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	bottom: -10px;
+	left: 0;
+	background: rgb(0,0,0);
+	border-radius: 5px;
+	transform: scaleX(0);
+	transition: 2s linear;
+	}
+	li a:hover:before, li a:focus:before {
+	visibility: visible;
+	transform: scaleX(1);
+	background: rgb(9,133,36);
+}
+.imgFrame {
+	max-height: 100vh;
+	height: 100%;
+}
+@media (max-width:1400px){
+
+}
+@media (max-width:1200px){
+
+}
+@media (max-width:992px){
+
+	
+}
+@media (max-width:768px){
+	h1, .h1 {
+		font-size: 2.5rem
+	}
+	p, li, li {
+		font-size: 2rem;
+	}
+}
+@media (max-width:570px){
+	h1, .h1 {
+		font-size: 2rem
+	}
+	p, li, li {
+		font-size: 1.5rem;
+	}
+}
