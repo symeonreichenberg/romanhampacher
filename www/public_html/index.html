@@ -42,5 +42,9 @@
 		$(window).load(function() {
 			$("body").removeClass("preload");
 		});
+		window.onresize = function() {
+			document.body.height = window.innerHeight;
+		}
+		window.onresize();
 	</script>
 </html>
