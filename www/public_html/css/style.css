@@ -22,7 +22,8 @@ time, mark, audio, video {
  -o-transition: none !important;
 }
 body {
-	background-color: rgb (254,254,254) !important;
+	background: rgb(255,255,254);
+	background: linear-gradient(25deg, rgba(255,255,254,1) 0%, rgba(255,254,218,1) 100%);
 }
 .frame{
 	position: relative;
@@ -40,6 +41,7 @@ body {
 h1, .h1 {
 	font-size: 3rem;
 	cursor: default;
+	word-break: keep-all;
 }
 ul {
 	list-style: none;
@@ -50,6 +52,7 @@ p, li, li {
 	font-size: 2rem;
 	line-height: 3.8rem;
 	color: rgb(0,0,0);
+	word-break: keep-all;
 }
 a, li a {
 	position: relative;
@@ -80,16 +83,16 @@ li a:before {
 	height: 100%;
 }
 @media (max-width:1400px){
-
-}
-@media (max-width:1200px){
-
-}
-@media (max-width:992px){
-
-	
+	.imgFrame {
+		height: 90%;
+		width: 20rem;
+	}
 }
 @media (max-width:768px){
+	.imgFrame {
+		height: 85%;
+		width: 10rem;
+	}
 	h1, .h1 {
 		font-size: 2.5rem
 	}
